@@ -37,31 +37,10 @@ flutter run
 3) Date picker not opening inside bottom sheet?
 - The Date field is read‑only and unfocuses the keyboard before launching the picker, with a safe date range set. Tap the field to open it.
 
-### Notes on Platforms
-- Android/iOS: sqflite is fully supported.
-- Windows/macOS/Linux: If you run on desktop, sqflite is not available by default. You can use `sqflite_common_ffi`. This project targets mobile; run on Android/iOS for a seamless experience.
-
 ### Database
 - DB file: `TodoDB.db`
 - Table: `Todo(id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, description TEXT, date TEXT)`
 - Migration: Adds `id` if an older DB without `id` exists.
 
-### Common Commands
-```bash
-# Analyze
-flutter analyze
 
-# Clean & re‑resolve deps
-flutter clean && flutter pub get
 
-# Run on a specific device
-flutter devices
-flutter run -d <deviceId>
-```
-
-### Troubleshooting
-- Android build errors about Gradle/Kotlin: this repo is configured for AGP 8.4, Kotlin 1.9.24, Gradle 8.6, Java 17. Make sure your environment matches or let Flutter manage it.
-- If IDE fails to resolve `flutter_slidable`, run `flutter pub get` and restart the analyzer/IDE.
-
-### License
-This project is provided as‑is for learning purposes.
