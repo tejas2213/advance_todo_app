@@ -21,7 +21,6 @@ A Flutter To‑Do application showcasing a modern UI (Google Fonts, SVGs, slidab
 - `lib/db_helper.dart` – Database helper (init, migration, CRUD)
 - `lib/main.dart` – App bootstrap; ensures DB is ready before UI
 - `lib/TodoScreen.dart` – UI; loads todos from DB and performs CRUD
-- `assets/svg/img.svg` – Sample avatar/icon used in list items
 
 ### Getting Started
 1) Install dependencies
